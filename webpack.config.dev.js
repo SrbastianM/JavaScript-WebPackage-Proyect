@@ -11,15 +11,14 @@ module.exports = {
         filename: '[name].[contenthash].js',
         assetModuleFilename: 'assets/images/[hash][ext][query]',
     },
-    mode: 'development',
-    watch: true,
+    mode: 'development', // Aquí puede ser el error
     resolve: {
         extensions: ['.js'],
         alias: {
-            '@utils': path.resolve(__dirname, 'src/utils/'),
-            '@templates': path.resolve(__dirname, 'src/templates/'),
-            '@styles': path.resolve(__dirname, 'src/styles/'),
-            '@images': path.resolve(__dirname, 'src/assets/images/'),
+            '@utils': path.resolve('src/utils/'),
+            '@templates': path.resolve('src/templates/'),
+            '@styles': path.resolve('src/styles/'),
+            '@images': path.resolve('src/assets/images/'),
         }
     },
     module: {

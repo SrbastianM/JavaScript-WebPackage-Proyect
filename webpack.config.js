@@ -85,7 +85,7 @@ module.exports = {
         minimize: true,
         minimizer: [
             new CssMinimizerPlugin(),
-            new TerserPlugin()
+            new TerserPlugin(),
         ]
     }
 }
